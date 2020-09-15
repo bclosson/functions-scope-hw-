@@ -66,16 +66,16 @@
 // }
 // console.log(sumDigits(36));
 //  This one I built myself after researching and A LOT of trial and error
-function sumDigits(num) {
-    let final = 0;
-    str = num.toString();
-    arr = str.split('')
-    for (let i = 0; i < arr.length; i++){
-        final += parseInt(arr[i]);
-    }
-    return final;
-}
-console.log(sumDigits(1254));
+// function sumDigits(num) {
+//     let final = 0;
+//     str = num.toString();
+//     arr = str.split('')
+//     for (let i = 0; i < arr.length; i++){
+//         final += parseInt(arr[i]);
+//     }
+//     return final;
+// }
+// console.log(sumDigits(1254));
 // ```js
 // console.log(sumDigits(42));
 // => 6;
@@ -85,3 +85,34 @@ console.log(sumDigits(1254));
 // &#x1F534; **Commit your work.** <br>
 // The commit message should read: <br>
 // "Commit 3 - Digit Sum".
+
+// ## 4. Pythagoras
+// // 
+// Write a function `calculateSide` that takes two arguments: 
+// `sideA` and `sideB`, and returns the solution for sideC using the Pythagorean theorem.
+
+// _hint:_ discover the Pythagorean Theorem on a website called 
+// google.com
+
+// // _hint:_ checkout the [Math methods]
+//  (https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math) in javascript
+
+// 4)
+function calculateSide(sideA, sideB) {
+    let a = sideA * sideA;
+    let b = sideB * sideB;
+    let c = Math.sqrt(a + b);
+    return c;
+}
+console.log(calculateSide(8, 6));
+
+// **_restriction_**: for this problem, do NOT use `Math.hypot()` 
+// (but for the rest of time, once you've done this problem feel free)
+// ```js
+// console.log(calculateSide(8, 6));
+// => 10
+// ```
+// <hr>
+// &#x1F534; **Commit your work.** <br>
+// The commit message should read: <br>
+// "Commit 4 - Pythagoras".
