@@ -1,4 +1,3 @@
-console.log('JS is working');
 
 // ## 1. Verbal questions
 
@@ -31,17 +30,17 @@ console.log('JS is working');
 // a palindrome, false if not. Make sure your function will give the correct answer for words with **capital 
 // letters**.
 
-function checkPalindrome(str) {
-    str =  str.toLowerCase();
-    if (str === str.split('').reverse().join('')) {
-        console.log("True");
-    }else {
-        console.log("False");
-    }
-}
-checkPalindrome("Radar");
+// function checkPalindrome(str) {
+//     str =  str.toLowerCase();
+//     if (str === str.split('').reverse().join('')) {
+//         console.log("True");
+//     }else {
+//         console.log("False");
+//     }
+// }
+// checkPalindrome("Radar");
 
-checkPalindrome("Borscht");
+// checkPalindrome("Borscht");
 
 // ```javascript
 // console.log(checkPalindrome("Radar"));
@@ -57,3 +56,32 @@ checkPalindrome("Borscht");
 // &#x1F534; **Commit your work.** <br>
 // The commit message should read: <br>
 // "Commit 2 - Palindrome".
+
+// ## 3. Digit Sum
+// Write a function `sumDigits` that accepts a number and returns the sum of its digits.
+
+// **The below function I found on w3resource, but only does two interger numbers**
+// function sumDigits(num) {
+//   return num % 10 + Math.floor(num / 10);
+// }
+// console.log(sumDigits(36));
+//  This one I built myself after researching and A LOT of trial and error
+function sumDigits(num) {
+    let final = 0;
+    str = num.toString();
+    arr = str.split('')
+    for (let i = 0; i < arr.length; i++){
+        final += parseInt(arr[i]);
+    }
+    return final;
+}
+console.log(sumDigits(1254));
+// ```js
+// console.log(sumDigits(42));
+// => 6;
+// ```
+
+// <hr>
+// &#x1F534; **Commit your work.** <br>
+// The commit message should read: <br>
+// "Commit 3 - Digit Sum".
