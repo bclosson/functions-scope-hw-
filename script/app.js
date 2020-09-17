@@ -65,7 +65,7 @@
 //   return num % 10 + Math.floor(num / 10);
 // }
 // console.log(sumDigits(36));
-//  This one I built myself after researching and A LOT of trial and error
+// //  This one I built myself after researching and A LOT of trial and error
 // function sumDigits(num) {
 //     let final = 0;
 //     str = num.toString();
@@ -98,13 +98,13 @@
 //  (https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math) in javascript
 
 // 4)
-function calculateSide(sideA, sideB) {
-    let a = sideA * sideA;
-    let b = sideB * sideB;
-    let c = Math.sqrt(a + b);
-    return c;
-}
-console.log(calculateSide(8, 6));
+// function calculateSide(sideA, sideB) {
+//     let a = sideA * sideA;
+//     let b = sideB * sideB;
+//     let c = Math.sqrt(a + b);
+//     return c;
+// }
+// console.log(calculateSide(8, 6));
 
 // **_restriction_**: for this problem, do NOT use `Math.hypot()` 
 // (but for the rest of time, once you've done this problem feel free)
@@ -116,3 +116,32 @@ console.log(calculateSide(8, 6));
 // &#x1F534; **Commit your work.** <br>
 // The commit message should read: <br>
 // "Commit 4 - Pythagoras".
+
+
+// ## 5. Sum Array
+// Write a function `sumArray` that takes an **array** as an argument.
+// The array should contain numbers. The function should return the sum of 
+// the numbers in the array. **Do not use `.reduce()`**.
+
+// Expected result:
+// ```javascript
+// console.log(sumArray([1, 2, 3, 4, 5, 6]));
+// => 21
+// ```
+
+// 5)
+
+const array = [1, 2, 3, 4, 5, 6, 7];
+let sum = 0;
+function sumArray(arr) {
+    for (let i = 0; i < arr.length; i++) {
+       sum += arr[i];
+    }
+    return sum;
+}
+console.log(sumArray(array));
+// // <hr>
+// // &#x1F534; **Commit your work.** <br>
+// // The commit message should read: <br>
+// // "Commit 5 - Sum Array".
+// // <hr></hr>
